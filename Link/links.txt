@@ -1,0 +1,6 @@
+https://pmd.github.io/
+https://pmd.github.io/pmd-6.5.0/index.html
+https://pmd.github.io/pmd-6.5.0/pmd_userdocs_installation.html#running-cpd-via-command-line
+https://pmd.github.io/pmd-6.5.0/pmd_userdocs_cli_reference.html#available-report-formats
+https://pmd.github.io/pmd-6.5.0/pmd_userdocs_making_rulesets.html#referencing-a-single-rule
+https://pmd.github.io/pmd-6.4.0/pmd_rules_java_documentation.html
