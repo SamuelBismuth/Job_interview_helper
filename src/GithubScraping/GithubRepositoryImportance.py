@@ -1,9 +1,9 @@
-# We only take the project where the user have contribuate x% of all the project.
+# We only take the project where the user have contribute x% of all the project.
 # QUESTION: Is it really relevant to calculate this in % and not in time to work...
 # We must give a grade to all the project.
 # How to attribute a grade for a project?
 
-#/SamuelBismuth/GIS
+# /SamuelBismuth/GIS
 
 from bs4 import BeautifulSoup
 

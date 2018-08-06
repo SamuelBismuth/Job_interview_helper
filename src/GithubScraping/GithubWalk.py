@@ -4,7 +4,7 @@
 from os import mkdir
 import os
 from bs4 import BeautifulSoup
-from GithubScraping.GithubWget import w_get, git_clone
+from GithubScraping.TerminalCommand import w_get, git_clone
 import shutil
 
 future_worker = "yoshago"  # Here we need the github username.
@@ -29,6 +29,8 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # For example give to the user to choose if he want to focus on the java code or c++, or either ion the small
 # code, or the big project, only 5 or everything. Maybe we can tell the running time for a chosen order.
 
+# Use parallelism.
+
 if __name__ == "__main__":
 
     if not os.path.exists('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker):
@@ -38,9 +40,7 @@ if __name__ == "__main__":
         git_clone('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker + '/',
                   "https://github.com" + link.get('href'))
         # Check the contribution of the user and the level of the project.
-
+        # Give a grade. -> How should we proceed ?
 
     shutil.rmtree('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker)
     os.remove('/home/sam/Desktop/Final_Project/GithubScraping/repositories.html')
-
-
