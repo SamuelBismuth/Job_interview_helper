@@ -14,7 +14,7 @@ future_worker = "yoshago"  # Here we need the github username.
 url = "https://github.com/" + future_worker + "?tab=repositories"
 w_get(url, "repositories.html")
 
-html_doc = open('/home/sam/Desktop/Final_Project/GithubScraping/repositories.html')
+html_doc = open('/home/sam/Desktop/Final_Project/src/repositories.html')
 
 soup = BeautifulSoup(html_doc, 'html.parser')
 
@@ -33,14 +33,22 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 if __name__ == "__main__":
 
-    if not os.path.exists('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker):
+    if not os.path.exists('/home/sam/Desktop/Final_Project/src/' + future_worker):
         mkdir(future_worker)
 
     for link in soup.find_all(itemprop="name codeRepository"):
-        git_clone('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker + '/',
+        git_clone('/home/sam/Desktop/Final_Project/src/' + future_worker + '/',
                   "https://github.com" + link.get('href'))
         # Check the contribution of the user and the level of the project.
         # Give a grade. -> How should we proceed ?
 
-    shutil.rmtree('/home/sam/Desktop/Final_Project/GithubScraping/' + future_worker)
-    os.remove('/home/sam/Desktop/Final_Project/GithubScraping/repositories.html')
+    if not os.path.exists('/home/sam/Desktop/Final_Project/src/pmd'):
+        mkdir('pmd')
+
+
+
+
+
+    #shutil.rmtree('/home/sam/Desktop/Final_Project/src/' + future_worker)
+    #shutil.rmtree('/home/sam/Desktop/Final_Project/src/pmd')
+    #os.remove('/home/sam/Desktop/Final_Project/src/repositories.html')

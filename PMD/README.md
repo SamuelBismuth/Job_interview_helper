@@ -1,5 +1,7 @@
+Path : /home/sam/Desktop/Final_Project/PMD/pmd-bin-6.7.0
+
 please run:
-alias pmd="$HOME/pmd-bin-6.5.0/bin/run.sh pmd"
+alias pmd="$HOME/Desktop/Final_Project/PMD/pmd-bin-6.7.0/bin/run.sh pmd"
 pmd -d /home/sam/Desktop/Final_Project/PMD/TestMyTokenizer.java -R /home/sam/Desktop/Final_Project/PMD/ruleset.xml -f csv -r /home/sam/Desktop/Final_Project/PMD/result.csv
 
 
