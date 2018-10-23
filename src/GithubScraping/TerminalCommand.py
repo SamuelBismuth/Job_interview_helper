@@ -19,7 +19,7 @@ def pmd(pmd_path, src, ruleset, result):
                                             + result])
 
 
-pmd("$HOME/Desktop/Final_Project/PMD/pmd-bin-6.7.0/bin/run.sh",
+'''pmd("$HOME/Desktop/Final_Project/PMD/pmd-bin-6.7.0/bin/run.sh",
     "/home/sam/Desktop/Final_Project/PMD/TestMyTokenizer.java",
     "/home/sam/Desktop/Final_Project/PMD/ruleset.xml",
     "/home/sam/Desktop/Final_Project/PMD/result.csv")
@@ -28,4 +28,4 @@ pmd("$HOME/Desktop/Final_Project/PMD/pmd-bin-6.7.0/bin/run.sh",
 pmd("$HOME/Desktop/Final_Project/PMD/pmd-bin-6.7.0/bin/run.sh",
     "/home/sam/Desktop/Final_Project/PMD/GIS/GIS/src",
     "/home/sam/Desktop/Final_Project/PMD/ruleset.xml",
-    "/home/sam/Desktop/Final_Project/PMD/resultOPPProject.csv")
+    "/home/sam/Desktop/Final_Project/PMD/resultOPPProject.csv") '''

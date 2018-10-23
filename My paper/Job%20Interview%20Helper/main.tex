@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{authblk, pifont, hyperref, biblatex, tabu}
+
+\makeatletter
+\renewcommand*{\@fnsymbol}[1] 
+{{
+\ifcase#1 \or \ding{65} \or \ding{100}
+\else\@ctrerr\fi 
+}}
+\makeatother
+
+\title{
+\href{https://github.com/SamuelBismuth/Job_interview_helper}
+{Job Interview Helper}
+}
+
+\author{Dvir Reut\thanks{
+Student of Computer Science (third year), \href{http://www.ariel.ac.il/}{Ariel University}, Ariel 40700, Israel. \\ Id : 000000000. Email: \href{mailto:reutdvir3@gmail.com}{reutdvir3@gmail.com}
+} \hspace{1in} Bismuth Samuel\thanks{
+Student of Computer Science, \href{http://www.ariel.ac.il/}{Ariel University} (third year), Ariel 40700, Israel. \\ Id : 342533064. Email: \href{mailto:samuelbismuth101@gmail.com}{samuelbismuth101@gmail.com}
+} \\ Advisor: Azaria Amos}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+   % A paragraph describing your work.
+   Given some \href{https://softwareengineering.stackexchange.com/questions/136163/whats-the-difference-between-junior-middle-and-senior-developers}{juniors, middles or seniors developers} applying for a specific job, the task of the head-hunter is to hire the "best" between all the applicants, such as best is defined by the head-hunter himself. \par
+   Obviously, the head-hunter judge each applicant by his data as: a curriculum vitae, a motivation letter, a job interview... \par
+   In parallel, and in particular for all the computer science workers or future workers, a lot of traces of the work made can be found in the web. As examples, \href{https://github.com/}{Git Hub}, \href{https://stackexchange.com/}{Stack Exchange}, or even social networks as \href{https://www.facebook.com/}{Facebook}, or \href{https://www.linkedin.com/feed/}{Linked In}... \par
+   The problem is that the amount of data found in the web may be huge. Then, the head-hunter has no choice and either spend a lot of time to check all of this data, or ignore him.
+   The use of data scraping may be a solution for the head-hunter, making the searching more efficient. Adding to this, the use of deep learning may help to understand better the data, as well as the applicant. \par
+   Given URLs of an applicant containing data on him, we create a new tool to make easier the choice of the head-hunter, or unless, to bring him data in a more proper way. %205 words.
+\end{abstract}
+
+\section{Introduction}
+% Explain the problem, why it is important (motivation) and give some direction to how you are planning to solve it / how you have solved it.
+The goal of a job interview is to understand as quickly as possible if an applicant is apt to work for a company or not. Indeed every job has some expectations, and between all the applicants interested by the job, it's sometimes difficult to make a choice, such that this choice concern the worker with the most faculties to reach all the expectations offered by the job. \par
+The work of choosing a worker is made by the recruiter. The classic way for a recruiter to make his choice is in function of the \textbf{data} of each applicant. The problem is that the data may be huge, and the time for a head-hunter is limited for each applicant. In parallel, a computer is really faster that a human to handle with a huge amount of data. In addition, using deep learning, it possible for a computer to have a good understanding of the data. Then, by combining everything, it's possible to provide a good and stronger help for the head-hunter, using computers. \par
+This project focusing in the world of the computer science. Indeed, any computer scientist should let trace of his work on the internet. As an example, \href{https://github.com/}{Git Hub} is a sort of social network, in which any programmer or group of programmers can share their projects and communicate. In Git Hub, a gold mine of information can be found, for the one which knows how to search. \par
+Maybe least significant than Git Hub, a lot of website can be tracked:
+\begin{itemize}
+  \item \href{https://stackexchange.com/}{Stack Exchange}, which offer a hub of communication between programmers. To quickly explain, we can found on this website a lot of sub website, like \href{https://stackoverflow.com/}{Stack Overflow} which focus only on code, or \href{https://cs.stackexchange.com/}{Computer Science} which focus only on computer science problems.
+  \item \href{https://www.facebook.com/}{Facebook}, which is more focus on the social life.
+  \item \href{https://www.linkedin.com/feed/}{Linked In}, which is more focus on the work life. 
+  \end{itemize} \par
+
+  The table \ref{table:1} explain for each significant website, what can be found. 
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{|c | c|} 
+ \hline
+ Website & Qualities \\ [0.5ex] 
+ \hline\hline
+ Git Hub & The way to program. \\ & The level of the programmer for each  language. \\ & The organization into a project. \\ & The team work. \\
+ \hline
+ Stack Exchange & The professional. \\ & The way to resolve a problem. \\ &  The serious.  \\
+ \hline
+ Facebook & The social life. \\
+ \hline
+ Linked In & The experience. \\ & The motivation.\\
+ \hline
+ \end{tabular}
+ \caption{Table to understand the signification of the data found in website}
+ \label{table:1}
+\end{table} \par
+
+To continue...
+
+\section{Related work}
+% summarize previously published papers on the topic you have chosen and/or on methods you are planning to use / have used (i.e., scientific papers that provide the required background). You must summarize the papers in your own words (make sure that you understand them). You can search for scientific papers at scholar.google.com.
+Today, social networks are a stronger tool to know more about a person \cite{mining}.
+%https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?referer=https://scholar.google.com/&httpsredir=1&article=2686&context=sis_research
+
+
+\section{Failed approaches}
+% not must.
+% describe approaches you have tried but that have failed.
+
+\section{A detailed description of your work or system}
+% This should describe what has actually worked.
+
+\section{Evaluation and results}
+% including comparison to some baseline(s)
+
+\section{Conclusions}
+
+\section{Future work}
+
+\printbibliography
+
+\end{document}
+
+% in bulk
+% understanding the psychology of a programmer by reading his code
