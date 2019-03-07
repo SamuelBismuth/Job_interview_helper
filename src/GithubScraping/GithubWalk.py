@@ -4,7 +4,7 @@
 from os import mkdir
 import os
 from bs4 import BeautifulSoup
-from GithubScraping.TerminalCommand import w_get, git_clone
+from src.GithubScraping.TerminalCommand import w_get, git_clone
 import shutil
 
 future_worker = "yoshago"  # Here we need the github username.
